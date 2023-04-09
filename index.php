@@ -7,7 +7,7 @@
   <title>課題①-1</title>
 </head>
 <body>
-  <form action="" method="post">
+  <form  method="post">
     <p>日本の首都は？</p>
     <input type="text" name="answer">
     <input type="submit" value="OK">
@@ -18,7 +18,7 @@
     $input_answer = $_POST["answer"];
     if ($input_answer == $answer) {
       echo "正解";
-    }else{
+    } else {
       echo "不正解";
     }
   }
