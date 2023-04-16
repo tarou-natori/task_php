@@ -12,7 +12,7 @@
     <input type="submit" value="検索">
     <?php
     $fruits = ['apple', 'orange', 'strawberry'];
-    $input_answer = filter(INPUT_POST, "answer");
+    $input_answer = filter_input(INPUT_POST, "answer");
     if (isset($input_answer)) {
       if ($input_answer == $fruits[0]) {
         echo $input_answer . "は、配列に含まれています。";
