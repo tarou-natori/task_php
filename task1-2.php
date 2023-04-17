@@ -11,7 +11,7 @@
     <input type="text" name="answer">
     <input type="submit" value="検索">
     <?php
-    $fruits = ['apple', 'orange', 'strawberry'];
+    $fruits = ["apple", "orange", "strawberry"];
     $input_answer = filter_input(INPUT_POST, "answer");
     if (isset($input_answer)) {
       if ($input_answer == $fruits[0]) {
