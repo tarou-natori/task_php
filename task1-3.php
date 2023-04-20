@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>課題①-3</title>
+</head>
+<body>
 <?php
 $question["問題"] = "日本の首都は?";
 $answer["回答1"] = "大阪";
@@ -18,3 +27,5 @@ foreach ($answer as $key => $value) {
   echo $key." ".$value."<br>";
 }
 ?>
+</body>
+</html>
