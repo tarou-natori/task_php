@@ -8,7 +8,7 @@
 </head>
 <body>
 <form method="post">
-  <select name="hand">
+  <select name="user_hand">
     <option value="グー">グー</option>
     <option value="チョキ">チョキ</option>
     <option value="パー">パー</option>
@@ -21,8 +21,8 @@
 $hands = ["グー", "チョキ", "パー"];
 
 
-if (isset($_POST["hand"])) {
-  $your_hand = $_POST["hand"];
+if (isset($_POST["user_hand"])) {
+  $your_hand = $_POST["user_hand"];
 
   $random = array_rand($hands);
   $pc_hand = $hands[$random];
