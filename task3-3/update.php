@@ -13,6 +13,7 @@ try {
   die("データベース接続に失敗しました: " . $e->getMessage());
 }
 
+
 $id = $_GET['id'];
 $sql = "SELECT * FROM boards WHERE id = :id";
 $stmt = $dbh->prepare($sql);

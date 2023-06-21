@@ -24,6 +24,7 @@
   </form>
   <h2>投稿内容一覧</h2>
 
+  
 <?php
 // DB接続情報
 $host = "localhost";

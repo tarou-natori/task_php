@@ -13,6 +13,7 @@
     $dbh = new PDO('mysql:host=localhost;dbname=mydb;charset=utf8mb4','root','root');
     $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
+    
     //SQLを準備
     $stmt = $dbh->prepare('INSERT INTO boards (name, content, deleted) VALUES(:name, :content, :deleted)');
   
