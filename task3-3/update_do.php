@@ -8,11 +8,11 @@
 </head>
 <body>
   <?php
+  require_once("connect_db.php");
+  ?>
+  
+  <?php
   try {
-    //DBに接続
-    $dbh = new PDO('mysql:host=localhost;dbname=mydb;charset=utf8mb4','root','root');
-    $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
     //SQLを準備
     $stmt = $dbh->prepare('UPDATE boards SET name = :name, content = :content WHERE id = :id');
   

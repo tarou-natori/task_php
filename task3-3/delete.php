@@ -33,12 +33,11 @@
 
     }
 
-  if (!empty($_POST['id'])) {
+  if (!empty($_POST['id'])) { 
     try {
-      //DBに接続
-      $dbh = new PDO('mysql:host=localhost;dbname=mydb;charset=utf8mb4','root','root');
-      $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
+      require_once("connect_db.php");
+      
       // 削除する投稿のIDを取得
       $id = $_POST['id'];
 
@@ -70,6 +69,6 @@
     </a>
   </div>
 
-  
+
 </body>
 </html>
